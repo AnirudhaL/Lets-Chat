@@ -1,2 +1,2 @@
 Lets-Chat.
-A responsive chatbox with python-django
+A responsive chatbox with python-django.
