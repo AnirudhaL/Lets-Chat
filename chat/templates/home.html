@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's Chat</title>
+    <!-- <link rel="stylesheet" href="../static/home.css"> -->
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+
+<body>
+    <h1>Let's Chat</h1>
+    <form action="checkview" method="POST" id="post-form">
+        {% csrf_token %}
+        <div id="room-name">
+            <input id="room-id" type="text" placeholder='Room Id/Name' name='room-id' autocomplete='off'>
+            <input id="user" type="text" placeholder='Username' name='user' autocomplete='off'>
+        </div>
+        <div id='submit'>
+            <input type="submit" id='go-in' value="Go In">
+        </div>
+    </form>
+</body>
+
+</html>

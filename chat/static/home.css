@@ -1,0 +1,143 @@
+html,
+body {
+    background-color: rgb(65, 65, 65);
+    margin: 0;
+    border: 0;
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    height: 100%;
+    font-family: 'Segoe UI';
+}
+
+h1 {
+    align-items: center;
+    box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%), 0px -1px 2px 1px rgb(119 119 119 / 30%);
+    border-radius: 50px;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    color: rgb(43, 188, 255);
+}
+
+input {
+    outline: none;
+    width: 300px;
+    font-weight: 600;
+}
+
+#room-name {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+#room-id {
+    margin-right: 10px;
+    box-shadow: 8px 7px 16px 0 rgb(0 0 0 / 25%), -1px -1px 17px 1px rgb(119 119 119 / 30%);
+    border-radius: 50px;
+    display: flex;
+    background: #3d3d3d;
+    border: 0;
+    height: 35px;
+    padding-left: 15px;
+    color: rgb(255, 255, 255);
+}
+
+#user {
+    box-shadow: 8px 7px 16px 0 rgb(0 0 0 / 25%), -1px -1px 17px 1px rgb(119 119 119 / 30%);
+    border-radius: 50px;
+    display: flex;
+    background: #3d3d3d;
+    border: 0;
+    height: 35px;
+    padding-left: 15px;
+    color: rgb(255, 255, 255);
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#go-in {
+    height: 22px;
+    width: 200px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin-right: 10px;
+    box-shadow: 8px 7px 16px 0 rgb(0 0 0 / 25%), -1px -1px 17px 1px rgb(119 119 119 / 30%);
+    border-radius: 50px;
+    display: flex;
+    background: #3d3d3d;
+    border: 0;
+    height: 35px;
+    padding-left: 7px;
+    color: rgb(43, 188, 255);
+    justify-content: center;
+}
+
+
+/* ----------------------------------------------MEDIA--------------------- */
+
+@media only screen and (max-width:840px) {
+    h1 {
+        width: 620px;
+    }
+    #room-name {
+        align-items: center;
+        flex-direction: column;
+    }
+    #room-id {
+        margin: 0 0 10px 0;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    h1 {
+        width: 500px;
+    }
+    #room-name {
+        align-items: center;
+        flex-direction: column;
+    }
+    #room-id {
+        margin: 0 0 10px 0;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    h1 {
+        width: 350px;
+    }
+    #room-name {
+        align-items: center;
+        flex-direction: column;
+    }
+    #room-id {
+        margin: 0 0 10px 0;
+    }
+}
+
+@media only screen and (max-width:370px) {
+    h1 {
+        width: 200px;
+    }
+    #room-name {
+        width: 208px;
+        align-items: center;
+        flex-direction: column;
+    }
+    #room-id {
+        margin: 0 0 10px 0;
+    }
+    #room-name>input {
+        width: 150px;
+    }
+    #submit>input {
+        width: 100px;
+    }
+}
